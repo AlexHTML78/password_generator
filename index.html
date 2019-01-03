@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Генератор Паролей Онлайн</title>
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="stylesheet" href="css/icon_font.min.css" />
+  </head>
+  <body>
+    <div id="popup">
+      <p id="popupText">В целях достижения максимальной работоспособности сервиса максимальный обьем
+                        пароля не должен превышать 99 знаков</p>
+    </div>
+    <div id="container">
+      <div id="icon-flipBtn"></div>
+      <div id="card">
+        <div class="front">
+          <h1>Любой пароль за Ваши деньги</h1>
+            <label for="charNum">Введите количество символов в пароле(<a href="#" id="question">?</a>)</label>
+            <input type="text" maxlength="2" pattern="\d*" required autocomplete="off" id="charNum" />
+            <div id="btns">
+                <button type="button" id="generateBtn">Сгенерировать</button>
+                <button type="button" id="saveBtn">Сохранить пароль</button>
+            </div>
+
+          <p id="output"></p>
+        </div>
+        <div class="back" title="Перезагрузите страницу, чтобы обновить список">
+          <h1>Ваши сохраненные пароли</h1>
+          <ul id="passwList"></ul>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <a href="https://vk.com/abvgdeyka0" target="_blank" rel="noopener" id="icon-vk"></a>
+      <a href="https://github.com/AlexHTML78" target="_blank rel="noopener" id="icon-github"></a>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
